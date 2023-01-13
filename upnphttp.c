@@ -1393,6 +1393,7 @@ start_dlna_header(struct string_s *str, int respcode, const char *tmode, const c
 	             "EXT:\r\n"
 	             "realTimeInfo.dlna.org: DLNA.ORG_TLAG=*\r\n"
 	             "transferMode.dlna.org: %s\r\n"
+                 "Access-Control-Allow-Origin: *\r\n"
 	             "Content-Type: %s\r\n",
 	             respcode, date, tmode, mime);
 }
